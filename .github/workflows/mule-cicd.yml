@@ -110,7 +110,7 @@ jobs:
       - name: Download Build Artifact
         uses: actions/download-artifact@v4
         with:
-          name: "mule-artifact-Sandbox"
+          name: "mule-artifact"
 
       - name: Publish Artifact to Exchange
         env:
@@ -149,7 +149,7 @@ jobs:
       - name: Download Build Artifact
         uses: actions/download-artifact@v4
         with:
-          name: "mule-artifact-${{ inputs.environment }}"
+          name: "mule-artifact"
 
       - name: "Deploy to CloudHub 2.0 (Environment Specific)"
         env:
